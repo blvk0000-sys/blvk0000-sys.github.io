@@ -67,3 +67,12 @@ strong {
 .section {
   margin-bottom: 30px;
 }
+
+pre {
+  background-color: #161b22;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+}
