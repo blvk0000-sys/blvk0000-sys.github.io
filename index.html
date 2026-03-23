@@ -3,45 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+    <title>Document</title>
+    <style>
+        .menu {
+            display: none;
+            /* Initially hide the menu */
+        }
+        .menu.active {
+            display: block;
+            /* Show the menu when active */
+        }
+        .hamburger {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>This is a brief introduction about myself.</p>
-        </section>
-        <section id="projects">
-            <h1>My Projects</h1>
-            <p>Here are some of the projects I've worked on.</p>
-        </section>
-        <section id="skills">
-            <h1>My Skills</h1>
-            <p>A showcase of my skill set.</p>
-        </section>
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <p>Feel free to reach out for collaboration or inquiries.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 by blvk0000-sys. All Rights Reserved.</p>
-    </footer>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
