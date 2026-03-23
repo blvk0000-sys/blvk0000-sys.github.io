@@ -1,25 +1,30 @@
 .terminal {
-    background-color: #1e1e1e;
-    color: #00ff00;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
-    border: 1px solid #00ff00;
+    background-color: #000000; /* Black background */
+    color: #00FFFF; /* Cyan text */
+    font-family: monospace; /* Monospace font */
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #00ff00;
+    color: #0000FF; /* Blue headings */
 }
 
-code {
-    background-color: #333;
-    color: #00ff00;
-    padding: 2px 4px;
-    border-radius: 4px;
+/* Styled links */
+a {
+    color: #00FFFF; /* Cyan links */
+    text-decoration: none;
 }
 
-body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.6;
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styled form elements */
+input, select, textarea {
+    background-color: #333333;
+    color: #FFFFFF;
+    border: 1px solid #00FFFF;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #0000FF;
 }
