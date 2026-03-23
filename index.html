@@ -2,37 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .menu {
-            display: none;
-            /* Initially hide the menu */
-        }
-        .menu.active {
-            display: block;
-            /* Show the menu when active */
-        }
-        .hamburger {
-            cursor: pointer;
-        }
-    </style>
+    <title>Portfolio Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
 </head>
 <body>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="menu" id="menu">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('active');
-        }
-    </script>
+    <aside class="sidebar">
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </aside>
+    <main>
+        <h2>Welcome to my portfolio website!</h2>
+        <p>This site serves as a showcase of my skills, projects, and experiences.</p>
+    </main>
 </body>
 </html>
