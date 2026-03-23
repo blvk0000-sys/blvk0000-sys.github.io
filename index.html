@@ -3,47 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Terminal Style Website</title>
-    <style>
-        body {
-            background-color: black;
-            color: cyan;
-            font-family: monospace;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-        h1, h2 {
-            color: blue;
-        }
-        .menu {
-            cursor: pointer;
-        }
-        .content {
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
 </head>
 <body>
     <header>
-        <div class="menu">&#9776; Menu</div>
+        <nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="content">
-        <h1>About</h1>
-        <p>This is a terminal-style website created as part of a project. Here, you can find information about various topics.</p>
-
-        <h2>Projects</h2>
-        <p>1. Project One: A brief description of project one.</p>
-        <p>2. Project Two: A brief description of project two.</p>
-
-        <h2>Contact</h2>
-        <p>Email: contact@example.com</p>
-        <p>Phone: (123) 456-7890</p>
-    </div>
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>This is a brief introduction about myself.</p>
+        </section>
+        <section id="projects">
+            <h1>My Projects</h1>
+            <p>Here are some of the projects I've worked on.</p>
+        </section>
+        <section id="skills">
+            <h1>My Skills</h1>
+            <p>A showcase of my skill set.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out for collaboration or inquiries.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 by blvk0000-sys. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
