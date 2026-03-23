@@ -1,4 +1,4 @@
-/* Global */
+/* ------------------ Global ------------------ */
 body {
   margin: 0;
   font-family: "Courier New", monospace;
@@ -7,7 +7,7 @@ body {
   display: flex;
 }
 
-/* Sidebar */
+/* ------------------ Sidebar ------------------ */
 .sidebar {
   width: 240px;
   background-color: #010409;
@@ -22,6 +22,20 @@ body {
   margin-bottom: 20px;
 }
 
+/* Menu Items (supports <a> now) */
+.menu-item {
+  display: block;           /* ensures <a> is block */
+  padding: 8px 0;
+  color: #c9d1d9;
+  text-decoration: none;    /* remove underline */
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #58a6ff;
+}
+
+/* Submenu for Projects */
 .submenu {
   margin-left: 15px;
   display: none;
@@ -31,18 +45,7 @@ body {
   font-size: 14px;
 }
 
-.menu-item {
-  display: block;
-  text-decoration: none;
-  color: #c9d1d9;
-  padding: 8px 0;
-}
-
-.menu-item:hover {
-  color: #58a6ff;
-}
-
-/* Content */
+/* ------------------ Content ------------------ */
 .content {
   flex: 1;
   padding: 40px;
@@ -70,6 +73,7 @@ strong {
   margin-bottom: 30px;
 }
 
+/* ------------------ Code / Pre blocks ------------------ */
 pre {
   background-color: #161b22;
   padding: 15px;
@@ -77,4 +81,32 @@ pre {
   overflow-x: auto;
   border: 1px solid #30363d;
   color: #c9d1d9;
+}
+
+/* ------------------ Links inside content ------------------ */
+.content a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ Responsive tweak (optional) ------------------ */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #30363d;
+  }
+
+  .content {
+    padding: 20px;
+  }
 }
